@@ -1,0 +1,13 @@
+cms:
+  image:
+    tag: 1.24.11
+  livenessProbe:
+    initialDelaySeconds: 120
+  readinessProbe:
+    initialDelaySeconds: 30
+  customAdminSecret: "websight-cms-secrets"
+  envsFromSecret:
+    - "websight-cms-secrets"
+  persistence:
+    tar:
+      size: "30Gi"
