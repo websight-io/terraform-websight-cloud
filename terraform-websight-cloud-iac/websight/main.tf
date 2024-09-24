@@ -21,7 +21,7 @@ resource "helm_release" "websight_cms" {
   name       = "websight-cms"
   repository = "https://websight-io.github.io/charts"
   chart      = "websight-cms"
-  version    = "2.2.0"
+  version    = "2.2.1"
   namespace  = var.namespace
   timeout    = 600
 

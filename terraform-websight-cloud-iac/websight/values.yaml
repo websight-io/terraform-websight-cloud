@@ -1,6 +1,4 @@
 cms:
-  image:
-    tag: 1.24.11
   livenessProbe:
     initialDelaySeconds: 120
   readinessProbe:
